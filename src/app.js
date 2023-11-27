@@ -23,9 +23,9 @@ app.use(myconnection(mysql, {
   host: 'mysqldb',
   user: 'lucas',
   password: '1234',
-  port: 3306,
+  port: '3306',
   database: 'crudnodejs'
-}, 'single'));
+}));
 
 app.listen(app.get('port'), () => {
   console.log('Listening on port ', app.get('port'));
