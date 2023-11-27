@@ -20,9 +20,9 @@ app.engine('.hbs', engine({
 app.set('view engine', 'hbs');
 
 app.use(myconnection(mysql, {
-  host: 'localhost',
-  user: 'root',
-  password: '',
+  host: 'mysqldb',
+  user: 'lucas',
+  password: '1234',
   port: 3306,
   database: 'crudnodejs'
 }, 'single'));
